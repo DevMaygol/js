@@ -1,0 +1,6 @@
+n = n + 4	é igual a n += 4
+n = n - 5	é igual a n -= 5
+n = n * 4 	é igual a n *= 4
+n = n / 2 	é igual a n /= 2
+n = n ** 2 	é igual a n **= 2
+n = n % 5 	é igual a n %= 5
