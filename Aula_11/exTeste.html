@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aduana</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Brasil!</h1>
+    Em que país você nasceu? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="res"> </div>
+    <script>
+        function pais(){
+            var origem = window.document.getElementById('txtpais')
+            var res = window.document.querySelector('div#res')
+            var p = String(origem.value)
+            res.innerHTML = `Você é do(a) ${p}`            
+            if(p == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong> BR kkkkkkk otario(a) </strong>`
+            }else{
+                res.innerHTML += `<p>Você é estrangeiro(a) do(a) <strong>${p}</strong>`
+            }
+            res.innerHTML += `<p>Siga para a respectiva fila.</p>`
+        }        
+    </script>
+</body>
+</html>
